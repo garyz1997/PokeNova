@@ -1,0 +1,37 @@
+LINK = "12WDsnIv6O8SekF16E144rIUwE5yUx8bTaXAh9vr6V1Y"
+
+; Settings
+UNIT = CM
+PAGE = 21.6, 27.9, PORTRAIT
+MARGINS = 0.5, 0.5, 0.1, 0.1
+CARDSIZE = 6.3, 8.8
+;VISUALS
+
+
+
+
+
+
+
+VISUAL=HVGPS, 72, 100
+;Image(snap)(size)
+IMAGE="1-{(IMAGE)}",[IMAGE],0%,0%,100%,54%
+;TextFont(snap)(size)
+TEXTFONT="1-{(NAME)}",[NAME],{100/72}%,54%,{7000/72}%,8%,CENTER,CENTER,0,100,Arial,20,,#000000
+;Rectangle(snap)(size)
+RECTANGLE=,0%,0%,{1500/72}%,26%,#878787
+;Polygon(snap)(size)
+POLYGON=,{300/72}%,2%,{1000/72}%,10%,6,30,#816438
+;Rectangle(snap)(size)
+RECTANGLE=,{400/72}%,15%,{800/72}%,8%,#000000
+;Rectangle(snap)(size)
+RECTANGLE=,0%,0%,100%,100%,#000000,EMPTY,0.18
+;TextFont(snap)(size)
+TEXTFONT="1-{(COST)}",[COST],{400/72}%,15%,{800/72}%,8%,CENTER,CENTER,0,100,Arial,20,T,#FFFFFF
+;TextFont(snap)(size)
+TEXTFONT="1-{(DESCRIPTION)}",[DESCRIPTION],{2400/72}%,61%,{2100/72}%,8%,CENTER,CENTER,0,100,Arial,14,,#000000
+;TextFont(snap)(size)
+TEXTFONT="1-{(SIZE)}",[SIZE],{500/72}%,4%,{600/72}%,6%,CENTER,CENTER,0,100,Arial,20,T,#F5F5F5
+;Roundrect(snap)(size)
+ROUNDRECT=,{3000/72}%,70%,12.5%,11%,#000000,#000000,0.1,5,2,F
+ENDVISUAL
